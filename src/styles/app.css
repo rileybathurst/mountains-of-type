@@ -10,9 +10,24 @@
 
 /* singlines */
 
+:root {
+  /* 🏔 Mountain Names as Font Sizing Defaults */
+  /* (Highest by Continent) */
+  --everest: 3rem; /* 29,035ft Asia */
+  --everest-lh: 3.75rem; /* 29,035ft Asia */
+
+  --aconcagua:2.5rem; /* 22,840ft South America */
+  --denali:2rem; /* 20,320ft North America */
+  --kilimanjaro: 1.5rem; /* 19,340ft Africa */
+  --elbrus:1.25rem; /* 18,510ft Europe / Russia */
+  --vinson_massif: 1rem; /* 16,050ft Antartica */
+  --kosciuszko: 0.75rem; /* 7,310ft Australia */
+}
+
 body {
   font-size: 16px;
   line-height: 1.25rem; /* 20px */
+  font-family: sans-serif;
 }
 
 p {
@@ -24,8 +39,8 @@ p {
 
 h1 {
   margin-top: 0; /* browser reset */
-  font-size: 3rem; /* 48px */
-  line-height: 3.75rem; /* 60px */
+  font-size: var(--everest); /* 48px */
+  line-height: var(--everest-lh); /* 60px */
   margin-bottom: 2.5rem; /* 40px */
   /* single line 100px */
   /* two lines 160px */
@@ -33,7 +48,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem; /* 40px */
+  font-size: var(--aconcagua); /* 40px */
   line-height: 3rem; /* 48px */
   margin-bottom: 2rem; /* 32px */
   /* single line 80px */
@@ -45,7 +60,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem; /* 32px */
+  font-size: var(--denali); /* 32px */
   line-height: 2.5rem; /* 40px */
   margin-bottom: 1.875rem; /* 30px */
   /* single line 70px */
@@ -54,7 +69,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem; /* 24px */
+  font-size: var(--kilimanjaro); /* 24px */
   line-height: 2rem; /* 32px */
   margin-bottom: 1.75rem; /* 28px */
   /* single line 60px */
@@ -63,7 +78,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.25rem; /* 20px */
+  font-size: var(--elbrus); /* 20px */
   line-height: 1.875rem; /* 30px */
   margin-bottom: 0.625rem; /* 10px */
   /* single line 40px */
@@ -72,7 +87,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1rem; /* 16px */
+  font-size: var(--vinson_massif); /* 16px */
   line-height: 1.25rem; /* 20px this becomes the vertical rythym */
   margin-bottom: 0.625rem; /* 10px skips some of the lines */
   /* single line 30px */
@@ -82,7 +97,7 @@ h6 {
 
 /* start the multi line problem here as itll be worst */
 small {
-  font-size: 0.75rem; /* 12px */
+  font-size: var(--kosciuszko); /* 12px */
   line-height: 1rem; /* 16px */
   margin-bottom: 0.875rem; /* 14px */
   /* single line 30px */
